@@ -12,7 +12,7 @@ public abstract class Pet extends Animal implements Make_sound {
     LocalDate dateOfBirth;
 
     public Pet(double height, double weight, String colorEye, String name, String breed, boolean vaccien,
-            String colorWool, LocalDate dateOfBirth, boolean b) {
+            String colorWool, LocalDate dateOfBirth) {
         super(height, weight, colorEye);
         this.name = name;
         this.breed = breed;
@@ -20,10 +20,6 @@ public abstract class Pet extends Animal implements Make_sound {
         this.colorWool = colorWool;
         this.dateOfBirth = dateOfBirth;
     }
-
-    // public Pet() {
-    // super(height, weight, colorEye, name, breed, vaccien, colorWool, dateOfBirth)
-    // }
 
     // прижиматься
     public void cuddle() {

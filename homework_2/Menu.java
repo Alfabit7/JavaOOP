@@ -12,72 +12,6 @@ import homework_2.Object_all_animal.Wolf;
 
 public class Menu {
 
-    /**
-     * 
-     * 
-     * public static void viewConsole(Zoo arr) {
-     * 
-     * while (true) {
-     * 
-     * System.out.println(
-     * "1 -Добавить животное\n2- Удалить животное по индексу\n3- Посмотреть
-     * информацию о животном с номером i\n4- Заставить животное с номером i издать
-     * звук\n5- Напечатать информацию о животных, которые есть на данный момент в
-     * зоопарке\n6- Заставить всех животных, которые на данный момент есть в
-     * зоопарке, издать звук ");
-     * Scanner in = new Scanner(System.in);
-     * System.out.print("Input a number: ");
-     * int idx = in.nextInt();
-     * switch (idx) {
-     * case 1:
-     * System.out.println(
-     * "Выберите животное которое хотите добавить\n1 - Bird\n2- Cat\n3- Chicken\n5-
-     * Tiger\n6- Wolf\n7- Dog\n8- Strok");
-     * Integer ind = in.nextInt();
-     * switch (ind) {
-     * case 1:
-     * arr.add(new Bird());
-     * break;
-     * case 2:
-     * arr.add(new Cat());
-     * break;
-     * case 3:
-     * arr.add(new Chicken());
-     * break;
-     * case 4:
-     * arr.add(new Wolf());
-     * break;
-     * case 5:
-     * arr.add(new Tiger());
-     * break;
-     * case 6:
-     * arr.add(new Dog());
-     * break;
-     * case 7:
-     * arr.add(new Strok());
-     * break;
-     * // menu(storage);
-     * default:
-     * break;
-     * }
-     * // case 2:
-     * // System.out.println("Выберите животное, которое хотите удалить");
-     * // int idxRemove = in.nextInt();
-     * // arr.remove(idxRemove);
-     * case 3:
-     * System.out.println("Введите индекс нужного животного:\n");
-     * int indx = in.nextInt();
-     * arr.showAnimal(indx);
-     * break;
-     * 
-     * // default:
-     * // break;
-     * 
-     * }
-     * }
-     * 
-     * }
-     */
 
     public static void menu(Zoo arr) {
         while (true) {
@@ -111,10 +45,10 @@ public class Menu {
                         case 6:
                             arr.add(new Strok());
                             break;
-                        // case 7:
-                        // menu(storage);
-                        // default:
-                        // break;
+                        case 7:
+                        menu(storage);
+                        default:
+                        break;
                     }
                     break;
                 case 2:
